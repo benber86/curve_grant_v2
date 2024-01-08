@@ -30,7 +30,7 @@ The analytics team currently consists of three developers. Funded last year by t
 
 The present proposal is to continue funding the current team and hire another contributor for two years (cf. [Team](#team) section below for details on work arrangement details), with the possibility of an early clawback (cf. [Payment](#payment-) section) by the DAO. The longer timeframe is to provide developers with an assurance of stability for what is an otherwise very precarious employment position (no health insurance or benefits, no formal contract, no guarantees of grant renewals, volatility of token used for salary payment).
 
-The total costs are **$820,200 for payroll** for the four developers and **$14,800 for infrastructure expenses** and overhead, adding up to a **total of $800,000**. Unused funds will be returned to the DAO at the end of the grant period.
+The total costs are **$820,200 for payroll** for the four developers and **$14,800 for infrastructure expenses** and overhead, adding up to a **total of $835,000**. Unused funds will be returned to the DAO at the end of the grant period.
 
 The team will be working on the following tasks:
 

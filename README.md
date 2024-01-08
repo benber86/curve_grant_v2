@@ -37,8 +37,8 @@ The team will be working on the following tasks:
 ### Expansion and improvement of Curve Monitor
 - Improve the range and accuracy of analytics currently offered on the platform: MEV analysis, DAO stats, chain-specific dashboards, in-depth pool analytics
 - Offer interactive applets: impermanent loss simulator, simulation and visualization of the effect of parameter changes, soft-liquidation loss simulations
-- Develop the platform into a "command center" by offering users more options to interact directly with Curve contracts on the front-end and additional tooling
-- Eventually make Curve Monitor a full-fledged alternative front-end for Curve. As recent [discussions around MiCA regulations in the EU](https://twitter.com/BillHughesDC/status/1717697038819942586) have shown, only having a single front-end represents a non negligible regulatory risk for the DAO. 
+- Develop the platform into a "command center" by offering users more options to interact directly with Curve contracts on the frontend and additional tooling
+- Eventually make Curve Monitor a full-fledged alternative frontend for Curve. As recent [discussions around MiCA regulations in the EU](https://twitter.com/BillHughesDC/status/1717697038819942586) have shown, only having a single frontend represents a non negligible regulatory risk for the DAO. 
 
 
 ### Further development of Curve's Python backend (`curve-prices`)
@@ -60,19 +60,19 @@ The team will be working on the following tasks:
 
 During the past year, the team has worked to provide data indexing, live monitoring and analytics dashboard for crvUSD as quickly as possible after the product was released. We operated a complete redesign of the Curve Monitor website and expanded the available dashboards to better serve the needs of the DAO and the Core team. 
 
-We spent a significant amount of effort on the new Python backend for Curve that will allow us to progressively phase out our current reliance on subgraphs and give us more flexibility in indexing. We also made significant process on the analysis of MEV activity on Curve to accurately spot sandwiches, atomic arbitrage transaction and CEX-DEX arbitrages. 
+We spent a significant amount of effort on the new Python backend for Curve that will allow us to progressively phase out our current reliance on subgraphs and give us more flexibility in indexing. We also made significant progres on the analysis of MEV activity on Curve to accurately spot sandwiches, atomic arbitrage transaction and CEX-DEX arbitrages. 
 
 ### Curve Monitor:
-- Hiring of a designer and front-end work to implement the new design from the figma specifications 
+- Hiring of a designer and frontend work to implement the new design from the figma specifications 
 - [crvUSD dashboards](https://curvemonitor.com/#/platform/crvusd)
-- Making the Curve Monitor front-end fully mobile friendly
+- Making the Curve Monitor frontend fully mobile friendly
 - [DAO page](https://curvemonitor.com/#/dao/proposals) listing fully decoded proposals, with the ability to vote directly from the site
 - A first version of an [MEV dashboard](https://curvemonitor.com/#/pool/mev) 
 - A ["couch cushion" dashboard](https://curvemonitor.com/#/platform/revenue/cushions) facilitating the tracking of undistributed accrued fees accross all chains
 
 ### Backend services:
 - Development and maintenance of Telegram monitoring bots for Curve pools and crvUSD user activity, MEV activity and gas usage. The Telegram bots proved [instrumental in mitigating an attack of Conic Finance](https://twitter.com/curvefinance/status/1682495649302958080) in 2023 by reporting the suspicious transactions in real time.
-- Continuous contributions to the development of Curve's new Python backend, `curve-prices`. The new backend replaces the subgraph for the indexing of on-chain activity on Curve pools and crvUSD and offers REST endpoints and websocket channels which now provide the Curve front-end with essential platform statistics. 
+- Continuous contributions to the development of Curve's new Python backend, `curve-prices`. The new backend replaces the subgraph for the indexing of on-chain activity on Curve pools and crvUSD and offers REST endpoints and websocket channels which now provide the Curve frontend with essential platform statistics. 
 - Development and maintenance of a crvUSD subgraph also used by third parties such as [Chaos Labs's crvUSD risk monitoring platform](https://community.chaoslabs.xyz/crv-usd/risk/overview), the Curve research team, Xenophon Labs, etc.
 - Development of an EVM transaction parsing module to detect atomic arbitrage trades and CEX-DEX trades
 - Maintenance of the existing pool subgraphs to track new pool types
@@ -93,9 +93,9 @@ The team will consist of the three current members of the analytics team, and an
 | Team member    | Responsibilities                                                                                                                                                           | Schedule                                                     | Salary                                                                     |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------|
 | Alunara        | Full-stack engineer, DevOps                                                                                                                                                | Full time                                                    | $212,000 for 2 years ($104k first year, $108k 2nd year)                    |
-| benny          | Back-end engineer (`curve-prices` and analytics API), subgraphs, ad-hoc analytics reports, management and liaison with other teams within the DAO & integrating protocols | Part-time (80%) for the first year, full time for the second | $191,200 for 2 years ($83,200 1st year, $108k 2nd year)                    |
-| Philipp        | Back-end engineer, MEV analytics, ad-hoc analytics reports, telegram bots                                                                                                 | Full time                                                    | $212,000 for 2 years ($104k first year, $108k 2nd year)                    |
-| New hire (TBD) | Back-end engineer (analytics API), ad-hoc analytics reports                                                                                                               | Full time                                                    | $160,000 for 2 years ($52k after recruitment mid-1st year, $108k 2nd year) |
+| benny          | Backend engineer (`curve-prices` and analytics API), subgraphs, ad-hoc analytics reports, management and liaison with other teams within the DAO & integrating protocols | Part-time (80%) for the first year, full time for the second | $191,200 for 2 years ($83,200 1st year, $108k 2nd year)                    |
+| Philipp        | Backend engineer, MEV analytics, ad-hoc analytics reports, telegram bots                                                                                                 | Full time                                                    | $212,000 for 2 years ($104k first year, $108k 2nd year)                    |
+| New hire (TBD) | Backend engineer (analytics API), ad-hoc analytics reports                                                                                                               | Full time                                                    | $160,000 for 2 years ($52k after recruitment mid-1st year, $108k 2nd year) |
 
 Salary payment will thus total **$775,200** over two years.
 
@@ -109,13 +109,13 @@ Total projected cost of **$14,800 for 2 years**, unused funds will be returned t
 
 _Total: $3,960 for 2 years_
 
-| Usage                                   | Instance specs                             | Cost                            |
-|-----------------------------------------|--------------------------------------------|---------------------------------|
+| Usage                                  | Instance specs                             | Cost                            |
+|----------------------------------------|--------------------------------------------|---------------------------------|
 | MEV analytics and telegram bots backend | t2.large, 500GB SSD                        | $73.65/m or $1767.6 for 2 years |
-| Analytics API backend                   | t2.medium                                  | $16.86/m or $404.6 for 2 years  |
-| Fixed IPs for backend services          | Elastic IP (free until 02/24)              | $7/m or $168 for 2 years        |
-| DB backup storage                       | S3 Infrequent access + Data transfer costs | $34.26/m or $411.2 for 2 years  |
-| Frontend hosting                        | Basic DO Droplet, 8GB RAM, 4 vCPUs         | $50/m or $1200 for 2 years      |
+| Analytics API backend                  | t2.medium                                  | $16.86/m or $404.6 for 2 years  |
+| Fixed IPs for backend services         | Elastic IP (free until 02/24)              | $7/m or $168 for 2 years        |
+| DB backup storage                      | S3 Infrequent access + Data transfer costs | $34.26/m or $411.2 for 2 years  |
+| Frontend hosting                       | Basic DO Droplet, 8GB RAM, 4 vCPUs         | $50/m or $1200 for 2 years      |
 
 
 **RPC and data providers costs:**

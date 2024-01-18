@@ -22,7 +22,7 @@
 
 ## Sentence summary
 
-We apply for a **$835,000 grant** to fund an analytics team of **4 engineers** for **two years**  to continue working on the curvemonitor platform, infrastructure for curve.fi's backend, platform monitoring bots on social media and reports on topics ranging from MEV to crvUSD borrower behavior.
+We apply for a **$835,000 grant** to fund an analytics team of **4 engineers** for **two years**  to continue working on the curvemonitor platform, the infrastructure for curve.fi's backend and platform monitoring bots on social media, produce reports on topics ranging from MEV to crvUSD borrower behavior and contribute to the curve.fi frontend.
 
 ## Proposal details
 
@@ -39,6 +39,7 @@ The team will be working on the following tasks:
 - Offer interactive applets: impermanent loss simulator, simulation and visualization of the effect of parameter changes, soft-liquidation loss simulations
 - Develop the platform into a "command center" by offering users more options to interact directly with Curve contracts on the frontend and additional tooling
 - Eventually make Curve Monitor a full-fledged alternative frontend for Curve. As recent [discussions around MiCA regulations in the EU](https://twitter.com/BillHughesDC/status/1717697038819942586) have shown, only having a single frontend represents a non negligible regulatory risk for the DAO. 
+- Use the work on curvemonitor to make contributions to the curve.fi frontend and reduce redundant work with the Curve frontend team.
 
 
 ### Further development of Curve's Python backend (`curve-prices`)

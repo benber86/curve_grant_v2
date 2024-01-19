@@ -146,7 +146,6 @@ _Total: $1,640 for 2 years_
 ## Payment 
 
 We ask for a payment of $835,000 streamed over 2 years with the possibility of clawback at any time by the DAO.
-The payment can be vested through a [vesting proxy contract](https://github.com/WormholeOracle/Curve-Vest) developed for this purpose in collaboration with the risk and research teams. 
 
 As the payment is in CRV, which price may fluctuate greatly over the 2 year duration of the grant, we request that the grant be priced at a value of $0.40 per CRV, or 2 million CRV to account for potential future price depreciation.
 The streamed amount will be converted to a USD stablecoin each month to pay for salaries and operational expenses. 
